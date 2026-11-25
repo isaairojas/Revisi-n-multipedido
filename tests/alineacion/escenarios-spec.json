@@ -1,0 +1,1815 @@
+{
+  "origen": {
+    "repositorio": "exodus-gtm-pwa",
+    "commit": "63a407d1 2026-11-24 chore(sdd): gate P del 2026-11-24 en los cinco cambios de multipedido"
+  },
+  "cambios": {
+    "listado": "2026-10-26-multipedido-surtido-listado",
+    "cierre": "2026-11-05-multipedido-surtido-listado-cierre",
+    "imagen-familia": "2026-10-26-surtido-listado-imagen-familia",
+    "armado": "2026-10-26-multipedido-armado-ronda",
+    "configuracion": "2026-11-20-multipedido-configuracion-armado"
+  },
+  "escenarios": [
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Inicio de surtido y elección de versión",
+      "escenario": "Ronda multipedido que no es V2"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Inicio de surtido y elección de versión",
+      "escenario": "Ronda multipedido V2"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Inicio de surtido y elección de versión",
+      "escenario": "Tarea sin productos"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Inicio de surtido y elección de versión",
+      "escenario": "Pedido único con bandera"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Ronda multipedido V2 en la asignación",
+      "escenario": "Ronda armada por el multipedido V2"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Ronda multipedido V2 en la asignación",
+      "escenario": "Partes de una factura dividida"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Ronda multipedido V2 en la asignación",
+      "escenario": "Ronda de paquetería"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Ronda multipedido V2 en la asignación",
+      "escenario": "Tarea de una sugerencia de embarque"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Ronda multipedido V2 en la asignación",
+      "escenario": "Falla la consulta de la bandera de listado"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Falla de la consulta de la bandera de multipedido V2",
+      "escenario": "Falla de conexión al consultar la bandera"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Falla de la consulta de la bandera de multipedido V2",
+      "escenario": "La consulta no responde a tiempo"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Falla de la consulta de la bandera de multipedido V2",
+      "escenario": "Sesión vencida al consultar la bandera"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Pedidos de la ronda en la tarea asignada",
+      "escenario": "Pedidos de la ronda en la tarea asignada"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Detalle de la ronda al aceptar",
+      "escenario": "El detalle de la ronda no consume folios"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Detalle de la ronda al aceptar",
+      "escenario": "Iniciar el surtido desde el detalle de la ronda"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Detalle de la ronda al aceptar",
+      "escenario": "Cerrar el detalle sin tomar la tarea"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Falla al cargar la ronda",
+      "escenario": "Falla la consulta de la ronda"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Falla al cargar la ronda",
+      "escenario": "Falla la consulta en una factura dividida"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Falla al cargar la ronda",
+      "escenario": "Falla la consulta antes de aceptar"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Falla al cargar la ronda",
+      "escenario": "Un pedido de la ronda llega sin datos"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Cliente en el detalle de la ronda",
+      "escenario": "Dos pedidos del mismo cliente"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Cliente en el detalle de la ronda",
+      "escenario": "Nombre de cliente que no cabe en el panel"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "asignacion-tarea",
+      "requisito": "Cliente en el detalle de la ronda",
+      "escenario": "Indicador de mismo cliente desactivado"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Vinculación del pedido al abrir",
+      "escenario": "Apertura de una ronda multipedido V2"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Vinculación del pedido al abrir",
+      "escenario": "Pieza de un código compartido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Vinculación del pedido al abrir",
+      "escenario": "Apertura del listado de un solo pedido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Vinculación del pedido al abrir",
+      "escenario": "Mientras carga la ronda"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Vinculación del pedido al abrir",
+      "escenario": "Falla la carga de la ronda"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Vinculación del pedido al abrir",
+      "escenario": "Falta el contenedor de un pedido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Validación de producto escaneado",
+      "escenario": "El primer pedido ya está completo"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Validación de producto escaneado",
+      "escenario": "Código fuera de la ronda"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Validación de producto escaneado",
+      "escenario": "Sobrante de un código ya surtido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Validación de producto escaneado",
+      "escenario": "Cantidad surtida en cero"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Validación de producto escaneado",
+      "escenario": "Cantidad mayor a la existencia"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Validación de producto escaneado",
+      "escenario": "Producto negado escaneado"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Validación de etiqueta única (EU)",
+      "escenario": "QR sin etiqueta única activa"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Validación de etiqueta única (EU)",
+      "escenario": "Etiqueta repetida en la ronda"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Validación de etiqueta única (EU)",
+      "escenario": "Etiqueta repetida en un pedido único"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Validación de etiqueta única (EU)",
+      "escenario": "Caducidad más próxima en una ronda"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Negar producto desde el detalle",
+      "escenario": "Negar con el primer pedido en proceso"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Negar producto desde el detalle",
+      "escenario": "Negar con surtido parcial"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Negar producto desde el detalle",
+      "escenario": "Negar con el primer pedido ya surtido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Negar producto desde el detalle",
+      "escenario": "Falla la negación en uno de los pedidos"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Negar producto desde el detalle",
+      "escenario": "Negar con motivo en un pedido único"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Restricciones para negar",
+      "escenario": "Aviso con pedidos sin surtir"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Restricciones para negar",
+      "escenario": "Falla del servicio de negación"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Restricciones para negar",
+      "escenario": "Un corporativo en la cascada"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Restricciones para negar",
+      "escenario": "Negar con piezas ya surtidas en un pedido único"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Restricciones para negar",
+      "escenario": "Pedido corporativo con orden de compra"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Finalizar el surtido del pedido",
+      "escenario": "Finalizar una ronda de 3 pedidos"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Finalizar el surtido del pedido",
+      "escenario": "El cierre no muestra resumen de la ronda"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Finalizar el surtido del pedido",
+      "escenario": "Finalizar con todos los códigos surtidos"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Retirar un corporativo de una ronda de 3"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Las letras no cambian al sacar un pedido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Falla el retiro del pedido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Falla el registro del retiro"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Corporativo sin piezas surtidas"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Retirar pedido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Retirar el único pedido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Queda un solo pedido en la ronda"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Registro del retiro del corporativo"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Corporativo que no se retira"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Lista agregada por código",
+      "escenario": "Sin \"Mismo cliente\" en el listado"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Lista agregada por código",
+      "escenario": "Código en dos pedidos"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Lista agregada por código",
+      "escenario": "Sección sin filas"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Lista agregada por código",
+      "escenario": "Ningún código compartido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Lista agregada por código",
+      "escenario": "Código negado en un pedido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Lista agregada por código",
+      "escenario": "Misceláneo sin marca"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Tarjetas de contenedor del listado",
+      "escenario": "Contenedores antes del primer escaneo"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Tarjetas de contenedor del listado",
+      "escenario": "Escaneo resalta su pedido y su código"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Tarjetas de contenedor del listado",
+      "escenario": "La HH no reordena la ronda"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Tarjetas de contenedor del listado",
+      "escenario": "El resaltado pasa al siguiente pedido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Desglose por pedido en el detalle",
+      "escenario": "Detalle de un código en tres pedidos"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Desglose por pedido en el detalle",
+      "escenario": "Código resuelto en todos los pedidos"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Desglose por pedido en el detalle",
+      "escenario": "Ronda con más pedidos de los que caben"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Desglose por pedido en el detalle",
+      "escenario": "Cantidad inhabilitada sin piezas"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Desglose por pedido en el detalle",
+      "escenario": "Ajustar la cantidad con piezas"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Desglose por pedido en el detalle",
+      "escenario": "Cantidad inválida al regresar"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Desglose por pedido en el detalle",
+      "escenario": "Completar el pedido desde el detalle"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Corregir la cantidad surtida de un pedido",
+      "escenario": "Confirmación de la corrección"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Corregir la cantidad surtida de un pedido",
+      "escenario": "Aceptar la corrección"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Corregir la cantidad surtida de un pedido",
+      "escenario": "Rechazar la corrección"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Corregir la cantidad surtida de un pedido",
+      "escenario": "Corregir el pedido anterior"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Corregir la cantidad surtida de un pedido",
+      "escenario": "Volver a surtir tras corregir"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Corregir la cantidad surtida de un pedido",
+      "escenario": "Sin piezas que corregir"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Corregir la cantidad surtida de un pedido",
+      "escenario": "Pedido reabierto que se vuelve a completar"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Corregir la cantidad surtida de un pedido",
+      "escenario": "Corregir un pedido con etiquetas únicas"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Corregir la cantidad surtida de un pedido",
+      "escenario": "Corregir un misceláneo"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Promoción incompleta al finalizar la ronda",
+      "escenario": "Incompleta solo en el segundo pedido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Promoción incompleta al finalizar la ronda",
+      "escenario": "Incompleta sin códigos negados"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Promoción incompleta al finalizar la ronda",
+      "escenario": "Cancelar sin retirar"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Promoción incompleta al finalizar la ronda",
+      "escenario": "Eliminar los productos de la promoción"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Promoción incompleta al finalizar la ronda",
+      "escenario": "Código que no es de la promoción"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Promoción incompleta al finalizar la ronda",
+      "escenario": "Falla \"Eliminar productos\" en uno de los pedidos"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Salir del listado deshace el vínculo",
+      "escenario": "Salida de una ronda de tres pedidos"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Salir del listado deshace el vínculo",
+      "escenario": "Salida después de sacar un pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Salir del listado deshace el vínculo",
+      "escenario": "Salida después de aceptar un cancelado"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Salir del listado deshace el vínculo",
+      "escenario": "Falla la desvinculación de un pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Salir del listado deshace el vínculo",
+      "escenario": "Falla al desvincular"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Salir del listado deshace el vínculo",
+      "escenario": "Salida de una tarea de un solo pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Salir del listado deshace el vínculo",
+      "escenario": "Salida con productos negados"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Falla el guardado del segundo pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Falla la desvinculación al cancelar"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Reintentar tras la falla de red"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Falla el guardado por un error del servidor"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Reintentar vuelve a fallar"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Falla el cierre de la ronda"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Falla el guardado con un solo pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Otro usuario concluye la ronda a mitad del guardado"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Parciales en varios pedidos"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Códigos sin surtir"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Guía por voz en el listado",
+      "escenario": "Resumen de una ronda multipedido V2"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Guía por voz en el listado",
+      "escenario": "Ronda de un solo pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Guía por voz en el listado",
+      "escenario": "Resumen al abrir"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Guía por voz en el listado",
+      "escenario": "Surtido de balanceo con lectura apagada"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden de los avisos al finalizar",
+      "escenario": "Corporativo antes que los demás avisos"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden de los avisos al finalizar",
+      "escenario": "Cancelado que además era el corporativo"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden de los avisos al finalizar",
+      "escenario": "Códigos en cero después de sacar el corporativo"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden de los avisos al finalizar",
+      "escenario": "Solo una promoción incompleta"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden de los avisos al finalizar",
+      "escenario": "Solo códigos en cero"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden de los avisos al finalizar",
+      "escenario": "Todos los avisos en orden"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Continuación tras un aviso al finalizar",
+      "escenario": "La promoción negada sigue con el cierre"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Continuación tras un aviso al finalizar",
+      "escenario": "Los parciales son la confirmación"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Continuación tras un aviso al finalizar",
+      "escenario": "Sacar el corporativo regresa a la ventana principal"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "La ronda se queda sin pedidos",
+      "escenario": "Se cancelan todos los pedidos de la ronda"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "La ronda se queda sin pedidos",
+      "escenario": "Todo negado"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "La ronda se queda sin pedidos",
+      "escenario": "Se sacan corporativos hasta quedar uno"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Permisos de las acciones del listado",
+      "escenario": "Sacar un pedido sin rol de supervisión"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Permisos de las acciones del listado",
+      "escenario": "Corregir sin rol de supervisión"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Alcance de la ronda de un solo pedido",
+      "escenario": "Detalle de un solo pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Alcance de la ronda de un solo pedido",
+      "escenario": "Sin avisos de cambio de pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Alcance de la ronda de un solo pedido",
+      "escenario": "Queda un pedido: voz, salida y cierre individuales"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Aviso de cambio de pedido de un código",
+      "escenario": "El código pasa al siguiente pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Aviso de cambio de pedido de un código",
+      "escenario": "Sin más piezas de ese código en otro pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Aviso de pedido completado",
+      "escenario": "Se completa el primer pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Aviso de pedido completado",
+      "escenario": "El aviso de pedido completado sustituye al de cambio de código"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Aviso de pedido completado",
+      "escenario": "Se completa el último pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Pedido cancelado durante el surtido",
+      "escenario": "El listado no cambia al cancelarse el pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Pedido cancelado durante el surtido",
+      "escenario": "Un pedido cancelado al intentar finalizar"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Pedido cancelado durante el surtido",
+      "escenario": "Cancelado en la finalización automática"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Pedido cancelado durante el surtido",
+      "escenario": "La ronda se cierra sin el cancelado"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Pedido cancelado durante el surtido",
+      "escenario": "Dos cancelados en el mismo intento"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Pedido cancelado durante el surtido",
+      "escenario": "Falla la comprobación de cancelados"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Ronda ya concluida por otro usuario",
+      "escenario": "Dos HH con la misma ronda"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "servicio/cierre-ronda-surtido",
+      "requisito": "Ronda sin pedidos",
+      "escenario": "Todos los pedidos retirados"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "servicio/cierre-ronda-surtido",
+      "requisito": "Ronda sin pedidos",
+      "escenario": "Ronda multipedido V2 con todos los pedidos cancelados"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "servicio/cierre-ronda-surtido",
+      "requisito": "Ronda sin pedidos",
+      "escenario": "Ronda multipedido V2 con todo negado"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "servicio/cierre-ronda-surtido",
+      "requisito": "Ronda sin pedidos",
+      "escenario": "Cierre actual sin pedidos"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "servicio/cierre-ronda-surtido",
+      "requisito": "Ronda sin pedidos",
+      "escenario": "Ronda multipedido V2 con surtido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "servicio/cierre-ronda-surtido",
+      "requisito": "Aviso de surtido finalizado",
+      "escenario": "Sucursal sin bandera"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "servicio/cierre-ronda-surtido",
+      "requisito": "Aviso de surtido finalizado",
+      "escenario": "Torre de Control no disponible"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "servicio/cierre-ronda-surtido",
+      "requisito": "Aviso de surtido finalizado",
+      "escenario": "Ronda cerrada con surtido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "servicio/cierre-ronda-surtido",
+      "requisito": "Aviso de surtido finalizado",
+      "escenario": "Ronda cancelada sin pedidos"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "catalogo-bandera-sucursal",
+      "requisito": "Bandera de agrupación por familia",
+      "escenario": "Sucursal sin la bandera"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "catalogo-bandera-sucursal",
+      "requisito": "Bandera de agrupación por familia",
+      "escenario": "Falla la consulta de la bandera"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Imagen del producto en el listado",
+      "escenario": "Producto con imagen"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Imagen del producto en el listado",
+      "escenario": "Imagen no disponible"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Imagen del producto en el listado",
+      "escenario": "Mientras carga la imagen"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Agrupación por familia",
+      "escenario": "Dos familias en pendientes"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Agrupación por familia",
+      "escenario": "La ubicación no ordena dentro de la familia"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Agrupación por familia",
+      "escenario": "La agrupación no añade encabezados"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Agrupación por familia",
+      "escenario": "Agrupación y ubicación activas a la vez"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Agrupación por familia",
+      "escenario": "Listado de un solo pedido"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Agrupación por familia",
+      "escenario": "Sección vacía con la agrupación activa"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Agrupación por familia",
+      "escenario": "La tarea llega sin familias"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Agrupación por familia",
+      "escenario": "Ningún producto con familia"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Agrupación por familia",
+      "escenario": "Producto con la clasificación incompleta"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Agrupación por familia",
+      "escenario": "La tarea no se puede cargar"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Agrupación por familia",
+      "escenario": "Agrupación desactivada"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden dentro de la agrupación por familia",
+      "escenario": "Orden de las familias"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden dentro de la agrupación por familia",
+      "escenario": "Familias con acentos y mayúsculas"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden dentro de la agrupación por familia",
+      "escenario": "Códigos de una familia de menor a mayor"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden dentro de la agrupación por familia",
+      "escenario": "Productos sin familia"
+    },
+    {
+      "cambio": "imagen-familia",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden dentro de la agrupación por familia",
+      "escenario": "Familia con texto de relleno"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "catalogo-bandera-sucursal",
+      "requisito": "Banderas del multipedido V2",
+      "escenario": "Banderas nuevas en el catálogo"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "catalogo-bandera-sucursal",
+      "requisito": "Banderas del multipedido V2",
+      "escenario": "Sucursal no dada de alta"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Convivencia con las rondas actuales",
+      "escenario": "Sucursal sin la bandera"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Convivencia con las rondas actuales",
+      "escenario": "Sucursal con la bandera"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Convivencia con las rondas actuales",
+      "escenario": "Paquetería o embarque sugerido prevalecen"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Convivencia con las rondas actuales",
+      "escenario": "Sin la bandera, cada sucursal sigue con su ruta"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Convivencia con las rondas actuales",
+      "escenario": "La ronda se arma al entrar a la ventana de tareas"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Convivencia con las rondas actuales",
+      "escenario": "Cola vacía"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedido ancla y ventana de evaluación",
+      "escenario": "Ventana con máximo 3"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedido ancla y ventana de evaluación",
+      "escenario": "Cola más corta que el máximo"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedido ancla y ventana de evaluación",
+      "escenario": "Manda el orden del procesador"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedido ancla y ventana de evaluación",
+      "escenario": "Ancla en una cola por bloques"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedido ancla y ventana de evaluación",
+      "escenario": "Almacenista (rol 2)"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedido ancla y ventana de evaluación",
+      "escenario": "Sustituye el criterio de la ronda por pedido"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Desempates del orden de la cola",
+      "escenario": "Empate en el orden para el ancla"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Desempates del orden de la cola",
+      "escenario": "Empate en el orden entre candidatos"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Desempates del orden de la cola",
+      "escenario": "Empate en el orden y en la creación"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Desempates del orden de la cola",
+      "escenario": "Empate en el orden, la creación y las partidas"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Desempates del orden de la cola",
+      "escenario": "La zona no cuenta"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Integrar o surtir solo",
+      "escenario": "Un candidato no cumple"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Integrar o surtir solo",
+      "escenario": "Un candidato rechazado no se sustituye"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Integrar o surtir solo",
+      "escenario": "Ningún candidato cumple"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Mismo servicio",
+      "escenario": "Pedido sin servicio definido"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Mismo servicio",
+      "escenario": "Servicios distintos"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Mismo servicio",
+      "escenario": "Mismo servicio"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedidos de una división de factura",
+      "escenario": "División que supera los topes"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedidos de una división de factura",
+      "escenario": "Candidato que es parte de una división"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedidos de una división de factura",
+      "escenario": "Unificación por montos desactivada"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tipo de pedido",
+      "escenario": "Traspaso en la ventana"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tipo de pedido",
+      "escenario": "Traspasos habilitados"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tipo de pedido",
+      "escenario": "Balanceo con traspasos habilitados"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tipo de pedido",
+      "escenario": "Balanceo como ancla"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tipo de pedido",
+      "escenario": "Corporativo como candidato"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tipo de pedido",
+      "escenario": "Candidato sin nombre de cliente"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tipo de pedido",
+      "escenario": "Ancla sin número de cliente"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Criterios de afinidad",
+      "escenario": "Solo misma dirección, sin códigos en común"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Criterios de afinidad",
+      "escenario": "Solo misma dirección, otra dirección"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Criterios de afinidad",
+      "escenario": "Las dos activas y falta el código"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Criterios de afinidad",
+      "escenario": "Las dos activas y se cumplen"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Criterios de afinidad",
+      "escenario": "Comparte código con un candidato ya integrado"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Criterios de afinidad",
+      "escenario": "Solo código compartido, sin códigos en común"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Criterios de afinidad",
+      "escenario": "Ninguna bandera de afinidad activa"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedidos retenidos o cancelados",
+      "escenario": "Candidato retenido"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedidos retenidos o cancelados",
+      "escenario": "Retenido enviado a surtir manualmente"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedidos retenidos o cancelados",
+      "escenario": "Retención durante el surtido"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedidos retenidos o cancelados",
+      "escenario": "Candidato cancelado"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedidos retenidos o cancelados",
+      "escenario": "Pedido con 0 partidas"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedidos retenidos o cancelados",
+      "escenario": "Cancelación durante el surtido"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedidos retenidos o cancelados",
+      "escenario": "Candidato con retención automática"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tope de partidas por ronda",
+      "escenario": "Código presente en dos pedidos"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tope de partidas por ronda",
+      "escenario": "El segundo cabe"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tope de partidas por ronda",
+      "escenario": "Justo en el tope"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tope de partidas por ronda",
+      "escenario": "El tercero no cabe"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tope de partidas por ronda",
+      "escenario": "Ancla que ya supera el tope"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tope de partidas por ronda",
+      "escenario": "El tope de partidas corta antes que el máximo"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tope de partidas por ronda",
+      "escenario": "Tope desactivado"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tope de partidas por ronda",
+      "escenario": "Tope desactivado con el parámetro en 0"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tiempo de la franja de la ronda",
+      "escenario": "El candidato se pasa de la franja"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tiempo de la franja de la ronda",
+      "escenario": "El candidato cabe en la franja"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tiempo de la franja de la ronda",
+      "escenario": "Tres pedidos que superan la franja"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tiempo de la franja de la ronda",
+      "escenario": "Ampliación sin tope"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tiempo de la franja de la ronda",
+      "escenario": "Ampliación con un máximo de 4"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Tiempo de la franja de la ronda",
+      "escenario": "Un candidato que no cumple no amplía la franja"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Orden de evaluación con otras banderas",
+      "escenario": "La división de factura se evalúa primero"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Orden de evaluación con otras banderas",
+      "escenario": "Las tres activas y el ancla no viene de una división"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Orden de evaluación con otras banderas",
+      "escenario": "La ronda por pedido no impide evaluar candidatos"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Orden de evaluación con otras banderas",
+      "escenario": "Sin candidatos, el ancla se surte sola"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/presupuesto-de-tiempo-de-surtido",
+      "requisito": "Reparto entre foráneos y locales",
+      "escenario": "25 % foráneo"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/presupuesto-de-tiempo-de-surtido",
+      "requisito": "Reparto entre foráneos y locales",
+      "escenario": "Multipedido V2 activo"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/presupuesto-de-tiempo-de-surtido",
+      "requisito": "Solo entran órdenes que caben",
+      "escenario": "Una orden posterior más corta sí cabe"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/presupuesto-de-tiempo-de-surtido",
+      "requisito": "Solo entran órdenes que caben",
+      "escenario": "Multipedido V2 activo"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/presupuesto-de-tiempo-de-surtido",
+      "requisito": "Descuento del presupuesto",
+      "escenario": "Dos locales"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/presupuesto-de-tiempo-de-surtido",
+      "requisito": "Foráneos consumen el presupuesto foráneo",
+      "escenario": "Foráneo que no cabe"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/presupuesto-de-tiempo-de-surtido",
+      "requisito": "Sobrante foráneo pasa a locales",
+      "escenario": "Sin foráneos"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/presupuesto-de-tiempo-de-surtido",
+      "requisito": "Vencidos en modo masivo",
+      "escenario": "Sobra presupuesto en modo masivo"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/presupuesto-de-tiempo-de-surtido",
+      "requisito": "Primer vencido en modo individual",
+      "escenario": "Vencido más largo que el presupuesto"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Precedencia del tipo de ronda",
+      "escenario": "Aplica paquetería"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Precedencia del tipo de ronda",
+      "escenario": "Aplica sugerencia de embarque"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Precedencia del tipo de ronda",
+      "escenario": "Ronda normal"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Precedencia del tipo de ronda",
+      "escenario": "Ronda multipedido V2"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Precedencia del tipo de ronda",
+      "escenario": "Paquetería con multipedido V2"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Órdenes locales activas elegibles",
+      "escenario": "Orden congelada por existencia"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Órdenes locales activas elegibles",
+      "escenario": "Orden sin zona"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Órdenes locales activas elegibles",
+      "escenario": "Orden sin partidas con multipedido V2"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Órdenes liberadas elegibles",
+      "escenario": "Foráneo liberado"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Órdenes liberadas elegibles",
+      "escenario": "Liberado ya surtido"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Órdenes liberadas elegibles",
+      "escenario": "Liberado retenido con multipedido V2"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Órdenes liberadas elegibles",
+      "escenario": "Liberado sin servicio definido con multipedido V2"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Candidatos foráneos automáticos",
+      "escenario": "Sin elegibles y atención foránea activa"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Candidatos foráneos automáticos",
+      "escenario": "Ya existen elegibles"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Candidatos foráneos automáticos",
+      "escenario": "Candidato cancelado con multipedido V2"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Candidatos foráneos automáticos",
+      "escenario": "Candidato sin zona con multipedido V2"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Candidatos foráneos automáticos",
+      "escenario": "Candidato sin servicio definido con multipedido V2"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/recuperacion-ordenes-por-surtir-por-rol",
+      "requisito": "Candidatos foráneos automáticos",
+      "escenario": "Candidato retenido con multipedido V2"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/traspasos-y-prioridad-de-peticiones",
+      "requisito": "Ronda por pedido",
+      "escenario": "Varias órdenes seleccionadas"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/traspasos-y-prioridad-de-peticiones",
+      "requisito": "Ronda por pedido",
+      "escenario": "Multipedido V2 activo"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/traspasos-y-prioridad-de-peticiones",
+      "requisito": "Ronda por pedido",
+      "escenario": "Almacenista con el multipedido V2 activo"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/traspasos-y-prioridad-de-peticiones",
+      "requisito": "Pedidos de venta antes que traspasos",
+      "escenario": "Traspaso más urgente que el pedido"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/traspasos-y-prioridad-de-peticiones",
+      "requisito": "Pedido con menor tiempo disponible",
+      "escenario": "Dos pedidos"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/traspasos-y-prioridad-de-peticiones",
+      "requisito": "Pedido con menor tiempo disponible",
+      "escenario": "Empate"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/traspasos-y-prioridad-de-peticiones",
+      "requisito": "Petición de traspaso con menor tiempo disponible",
+      "escenario": "Dos peticiones"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/traspasos-y-prioridad-de-peticiones",
+      "requisito": "Petición de traspaso con menor tiempo disponible",
+      "escenario": "Mismo día, distinta hora máxima"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/traspasos-y-prioridad-de-peticiones",
+      "requisito": "Petición de traspaso con menor tiempo disponible",
+      "escenario": "Almacenista con el multipedido V2 activo"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/traspasos-y-prioridad-de-peticiones",
+      "requisito": "Petición sin fecha límite de reparto",
+      "escenario": "Petición sin hora máxima"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "servicio/traspasos-y-prioridad-de-peticiones",
+      "requisito": "Sin pedidos ni traspasos en ronda por pedido",
+      "escenario": "Tipo no reconocido"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Criterios del multipedido V2 por sucursal",
+      "escenario": "Sucursal sin multipedido V2"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Criterios del multipedido V2 por sucursal",
+      "escenario": "Sucursal sin listado en HH"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Criterios del multipedido V2 por sucursal",
+      "escenario": "Configuración del alta"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Criterios del multipedido V2 por sucursal",
+      "escenario": "Misma dirección y tope de partidas activos"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Criterios del multipedido V2 por sucursal",
+      "escenario": "Traspasos y tope de partidas activos"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Criterios del multipedido V2 por sucursal",
+      "escenario": "Misma dirección sin asignar"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Criterios del multipedido V2 por sucursal",
+      "escenario": "Código compartido sin asignar"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Criterios del multipedido V2 por sucursal",
+      "escenario": "Tope de partidas sin asignar"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Criterios del multipedido V2 por sucursal",
+      "escenario": "Traspasos sin asignar"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Parámetros numéricos del multipedido V2",
+      "escenario": "Parámetro en cero"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Parámetros numéricos del multipedido V2",
+      "escenario": "Tope en 0 con su bandera inactiva"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Parámetros numéricos del multipedido V2",
+      "escenario": "Máximo de pedidos sin configurar"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Parámetros numéricos del multipedido V2",
+      "escenario": "Tope de partidas sin configurar"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Parámetros numéricos del multipedido V2",
+      "escenario": "Sucursal sin configuración de ordenamiento"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Parámetros numéricos del multipedido V2",
+      "escenario": "Valor configurado"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Parámetros numéricos del multipedido V2",
+      "escenario": "Cada sucursal con su valor"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Parámetros numéricos del multipedido V2",
+      "escenario": "División de factura con el parámetro en cero"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Alta de una sucursal para el multipedido V2",
+      "escenario": "Valores del alta"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Alta de una sucursal para el multipedido V2",
+      "escenario": "Alta incompleta"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Cambios de configuración sin desplegar",
+      "escenario": "Cambio de parámetro sin desplegar"
+    },
+    {
+      "cambio": "configuracion",
+      "capacidad": "configuracion-ronda-multipedido",
+      "requisito": "Cambios de configuración sin desplegar",
+      "escenario": "Cambio de bandera sin desplegar"
+    }
+  ]
+}

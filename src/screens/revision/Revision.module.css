@@ -1,0 +1,334 @@
+/*
+ * Revisión de pedido (propuesta sin spec). Medidas y colores de Figma "🔎 Revisión - Independiente" › Interfaz principal
+ * revisión y de `AssortmentCheckScreen` (tema de exodus-gtm-pwa: primary #1B3892, chips amarillo/azul/verde).
+ */
+.screen {
+  position: absolute;
+  inset: 0;
+  background: var(--color-blanco);
+}
+
+.cuerpo {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+/* ---- Intent revisión · R6: indicador de la ronda (nuevo, sin nodo en Figma) ---- */
+.indicador {
+  align-self: center;
+  margin: 0;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--color-primary-azul-0);
+  color: var(--color-primary-azul-300);
+  font: 400 14px/normal var(--font-family-roboto);
+}
+
+.indicador b {
+  font-weight: 700;
+}
+
+/* ---- "Avance de la revisión" (SummaryHeader + GradientProgressBar) ---- */
+.avance {
+  overflow: hidden;
+  border: 1px solid var(--color-primary-azul-300);
+  border-radius: 5px;
+}
+
+.avanceHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 32px;
+  padding: 4px 10px;
+  background: var(--color-primary-azul-300);
+  color: var(--color-blanco);
+  font: 400 12px/normal var(--font-family-roboto);
+}
+
+.avanceTitulo,
+.avancePedido {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avanceTitulo img {
+  filter: brightness(0) invert(1);
+}
+
+.avancePedido b {
+  font: 700 13px/normal var(--font-family-roboto);
+}
+
+.avanceBody {
+  padding: 8px 8px 10px;
+  background: var(--color-blanco);
+}
+
+.barra {
+  overflow: hidden;
+  height: 24px;
+  border-radius: 12px;
+  background: #dde3f0; /* gray11 del tema de la app */
+}
+
+.barraRelleno {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 10px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, var(--color-primary-azul-300), var(--color-primary-azul-200), var(--color-primary-azul-100));
+  transition: width 0.25s ease-out;
+}
+
+.barraRelleno span {
+  color: var(--color-blanco);
+  font: 700 11px/normal var(--font-family-roboto);
+}
+
+/* ---- Tabla Producto / Surtido / Revisado (DataTable) ---- */
+.tabla {
+  overflow: hidden;
+  border: 1px solid var(--color-primary-azul-300);
+  border-radius: 8px;
+}
+
+.tablaHead,
+.fila {
+  display: grid;
+  grid-template-columns: 1fr 64px 72px;
+  align-items: center;
+}
+
+.tablaHead {
+  padding: 8px 10px;
+  background: var(--color-primary-azul-300);
+  color: var(--color-blanco);
+  font: 700 11px/normal var(--font-family-roboto);
+}
+
+.tablaHead span:not(:first-child) {
+  text-align: center;
+}
+
+.filas {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filas li + li {
+  border-top: 1px solid var(--color-divider);
+}
+
+.fila {
+  width: 100%;
+  padding: 8px 10px;
+  border: 0;
+  background: var(--color-blanco);
+  text-align: left;
+  cursor: pointer;
+}
+
+.fila:active {
+  background: var(--color-primary-azul-0);
+}
+
+/* Último producto revisado: azul claro, como el surtido y Revision-HH-v2. */
+.filaUltima {
+  background: var(--color-primary-azul-0);
+}
+
+.producto {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.thumb {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.productoTexto {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 2px;
+}
+
+.productoTexto b {
+  color: var(--color-negro);
+  font: 700 13px/normal var(--font-family-roboto);
+}
+
+.descripcion {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--color-negro);
+  font: 400 10px/1.2 var(--font-family-roboto);
+  text-transform: uppercase;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.numero {
+  display: flex;
+  justify-content: center;
+  color: var(--color-negro);
+  font: 400 14px/normal var(--font-family-roboto);
+}
+
+/* QuantityProgress simpleMode: solo el número sobre un chip de color de estado. */
+.chip {
+  min-width: 34px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: var(--color-negro);
+  font: 700 13px/normal var(--font-family-roboto);
+  text-align: center;
+}
+
+.sin-revisar {
+  background: var(--color-estatus-sin-iniciar);
+}
+
+.parcial {
+  background: var(--color-estatus-parcialidad);
+}
+
+.completo {
+  background: var(--color-estatus-completado);
+}
+
+/* ---- Modales ---- */
+.sinDiferencias {
+  margin: 0;
+  color: var(--color-botones-success);
+  font: 700 14px/normal var(--font-family-roboto);
+  text-align: center;
+}
+
+.previo {
+  margin: 0;
+  align-self: flex-start;
+  color: var(--color-secondary-rojo-300);
+  font: 700 13px/normal var(--font-family-roboto);
+}
+
+.contadorAncho,
+.contadorAncho > div {
+  width: 100%;
+}
+
+.faltante {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  gap: 8px;
+  padding: 6px 18px;
+  border-radius: 45px;
+  background: var(--color-secondary-rojo-300);
+  color: var(--color-blanco);
+  font: 700 18px/normal var(--font-family-roboto);
+}
+
+.faltante > span {
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-blanco);
+  color: var(--color-secondary-rojo-300);
+  font-size: 14px;
+}
+
+.par {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.diferencia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+  padding: 10px;
+  border-radius: 5px;
+  background: #ededed; /* gray6 del tema de la app */
+}
+
+.diferencia span {
+  color: #343434; /* gray7 */
+  font: 700 13px/normal var(--font-family-roboto);
+}
+
+.diferencia b {
+  color: var(--color-secondary-rojo-300);
+  font: 700 26px/normal var(--font-family-roboto);
+}
+
+.transicionConLetra {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.promoTitulo {
+  font: 700 14px/normal var(--font-family-roboto);
+}
+
+.promoFila {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+/* ---- Detalle del producto ---- */
+.detalle {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 100%;
+}
+
+.mitadAncho {
+  display: flex;
+  width: 50%;
+}
+
+.cantidadRevisada {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.cantidadRevisada > span {
+  flex: none;
+  font: 700 14px/normal var(--font-family-roboto);
+}
+
+.mitad {
+  flex: 1;
+}

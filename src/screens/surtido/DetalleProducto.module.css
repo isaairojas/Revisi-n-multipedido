@@ -1,0 +1,261 @@
+.screen {
+  position: absolute;
+  inset: 0;
+  background: var(--color-blanco);
+}
+
+/* 3199:6380 */
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+}
+
+/* "Datos" — 3199:6381 */
+.datos {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 100%;
+}
+
+/* 3199:6393 */
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 100%;
+}
+
+/* "Datos surtido" — 3199:6394 */
+.pair {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* ---- Desglose por pedido (FR-013) — sin respaldo en Figma ---- */
+
+/* "Surtido por pedido" — 41:2429 de la referencia: título S2 y filas con divisor */
+.desglose {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.desgloseHead {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.desgloseTitulo {
+  margin: 0;
+  color: var(--color-negro);
+  font: var(--font-s2-subtitle);
+  line-height: normal;
+}
+
+/* "Corregir {letra}" — corrección en escalera (2026-11-09), sin nodo en Figma. Contorno azul como el
+   botón contorno del design-system (4582:23666), a la altura de una fila del desglose. */
+.corregir {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  min-width: 112px;
+  height: 36px;
+  padding: 0 14px;
+  border: 1px solid var(--color-primary-azul-300);
+  border-radius: 5px;
+  background: var(--color-blanco);
+  color: var(--color-primary-azul-300);
+  font: 700 14px/normal var(--font-family-roboto);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.corregir:not(:disabled):active {
+  background: var(--color-primary-azul-0);
+}
+
+.corregir:disabled {
+  border-color: var(--color-divider);
+  color: var(--color-inactive-text);
+  cursor: default;
+}
+
+.presencias {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.presenciaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.presencia {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+
+/* Pedido al que entra el próximo escaneo (FR-010). Era rojo (sesión 2026-10-27); desde el
+   2026-11-02 va en azul claro, el mismo resaltado del producto escaneado en la lista. */
+.presenciaActiva {
+  background: var(--color-primary-azul-0);
+  box-shadow: inset 4px 0 0 var(--color-primary-azul-300);
+  padding-left: 12px;
+}
+
+/* Pedidos que no se están surtiendo: en gris, como inhabilitados. El chip no se atenúa para
+   que el estatus siga legible (p. ej. "11 de 11" en verde). */
+.presenciaInactiva .presenciaLetra {
+  opacity: 0.5;
+}
+
+.presenciaInactiva .presenciaPedido,
+.presenciaInactiva .presenciaSolicitado {
+  color: var(--color-inactive-text);
+}
+
+.presenciaLetra {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.presenciaInfo {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.presenciaHead {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 8px;
+  align-items: center;
+}
+
+.presenciaPedido {
+  color: var(--color-negro);
+  font: 400 12px/normal var(--font-family-roboto);
+}
+
+.presenciaBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--color-primary-azul-300);
+  color: var(--color-blanco);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.presenciaSolicitado {
+  color: var(--color-negro);
+  font: var(--font-b2-body);
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.presenciaMotivo {
+  margin: 0;
+  overflow: hidden;
+  color: var(--color-secondary-rojo-300);
+  font: var(--font-b1-body);
+  line-height: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.presenciaAccion {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
+}
+
+/* Cantidad del pedido en surtido: el stepper es solo informativo (clarify 18), con + y − inhabilitados.
+   El Stepper del design-system no atenúa sus íconos: se hace aquí para no tocarlo. */
+/* "Cantidad surtida" (SpinnerInput del V2): 160 px en la fila del pedido en surtido. */
+.cantidadSurtida {
+  flex: 0 0 160px;
+  width: 160px;
+}
+
+.cantidadInput {
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+}
+
+.cantidadInput:focus {
+  box-shadow: inset 0 0 0 2px var(--color-primary-azul-300);
+}
+
+/* Inhabilitada (el pedido entró al detalle sin piezas): − y + en gris y la cantidad atenuada. */
+.cantidadSurtida button:disabled img {
+  filter: grayscale(1);
+  opacity: 0.4;
+}
+
+.cantidadInhabilitada .cantidadInput {
+  background: var(--color-inactive);
+  color: var(--color-inactive-text);
+}
+
+.consulta {
+  width: 100%;
+  margin: 0;
+  color: var(--color-inactive-text);
+  font: var(--font-b1-body);
+  line-height: normal;
+}
+
+.flex1 {
+  flex: 1 0 0;
+}
+
+/* "Cantidad surtida" con su rótulo visible, como hoy (pedido único y fila del pedido en surtido). */
+.cantidadUnica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.cantidadConRotulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.cantidadRotulo {
+  font: var(--font-b1-body);
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-negro, #222);
+}

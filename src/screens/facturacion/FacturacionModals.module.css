@@ -1,0 +1,145 @@
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.text {
+  width: 100%;
+  color: var(--color-negro);
+  font: 400 16px/normal var(--font-family-roboto); /* figma: 3872:16274 (sin estilo, 16 px) */
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+}
+
+.flex1 {
+  flex: 1 0 0;
+}
+
+.full {
+  width: 100%;
+}
+
+/* Recuadro con No. de embarque — 6178:15537 / 6174:15392 */
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px 30px;
+  overflow: hidden;
+  background: var(--color-inactive);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.boxTitle {
+  font: var(--font-b2-body);
+  color: var(--color-negro);
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.boxValue {
+  font: 700 24px/normal var(--font-family-roboto); /* figma: 6178:15539 (sin estilo, 24 px) */
+  color: var(--color-primary-azul-300);
+  white-space: nowrap;
+}
+
+.boxDetail {
+  font: 400 15px/normal var(--font-family-roboto);
+  color: var(--color-negro);
+  white-space: nowrap;
+}
+
+/* Opciones del selector */
+.opciones {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.39);
+  background: var(--color-blanco);
+  overflow: hidden;
+}
+
+.opcion {
+  padding: 12px 13px;
+  color: var(--color-negro);
+  font: 400 15px/normal var(--font-family-roboto);
+  text-align: left;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.opcion:last-child {
+  border-bottom: 0;
+}
+
+.opcion:hover {
+  background: var(--color-primary-azul-0);
+}
+
+/* ---- Agregados en la demo de revisión multipedido (campos de Figma 6157:11984) ---- */
+.campo {
+  position: relative;
+  width: 100%;
+}
+
+.campo > .opciones {
+  position: absolute;
+  z-index: 5;
+  top: calc(100% + 4px);
+  left: 0;
+}
+
+.text p + p {
+  margin-top: 10px;
+}
+
+/* "Comentario": caja de 5 px de radio con la etiqueta sobre el borde, como FloatingLabelInput. */
+.comentario {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.comentarioEtiqueta {
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  padding: 0 4px;
+  background: var(--color-blanco);
+  color: var(--color-negro);
+  font: 700 13px/16px var(--font-family-roboto);
+}
+
+.comentario textarea {
+  width: 100%;
+  min-height: 72px;
+  padding: 14px 13px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+  border-radius: 5px;
+  resize: none;
+  color: var(--color-negro);
+  font: 400 15px/1.3 var(--font-family-roboto);
+}
+
+.comentario textarea:read-only {
+  background: var(--color-inactive);
+  color: var(--color-inactive-text);
+}
+
+.conLetra {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
