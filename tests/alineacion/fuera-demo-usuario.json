@@ -1,0 +1,347 @@
+{
+  "nota": "Escenarios de las specs de surtido que están en alcance-revision.json pero ya no se muestran en esta demo: desde el 2026-11-26 la demo es para el usuario final y del surtido solo deja \"Finalizar una ronda de 3 pedidos\" (todo surtido). Quedan fuera los avisos y fallas al finalizar el surtido y los pedidos retenidos o cancelados durante el surtido. alcance-revision.json no cambia porque lo comparte la demo de surtido (HH-Surtido-Multiorden). Para volver a mostrar uno, agrega su caso al catálogo y quítalo de aquí.",
+  "escenarios": [
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Finalizar el surtido del pedido",
+      "escenario": "El cierre no muestra resumen de la ronda"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Finalizar el surtido del pedido",
+      "escenario": "Finalizar con todos los códigos surtidos"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Retirar un corporativo de una ronda de 3"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Las letras no cambian al sacar un pedido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Falla el retiro del pedido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Falla el registro del retiro"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Corporativo sin piezas surtidas"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Retirar pedido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Retirar el único pedido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Queda un solo pedido en la ronda"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Registro del retiro del corporativo"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Sacar el pedido de la ronda",
+      "escenario": "Corporativo que no se retira"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Promoción incompleta al finalizar la ronda",
+      "escenario": "Incompleta solo en el segundo pedido"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Promoción incompleta al finalizar la ronda",
+      "escenario": "Incompleta sin códigos negados"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Promoción incompleta al finalizar la ronda",
+      "escenario": "Cancelar sin retirar"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Promoción incompleta al finalizar la ronda",
+      "escenario": "Eliminar los productos de la promoción"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Promoción incompleta al finalizar la ronda",
+      "escenario": "Código que no es de la promoción"
+    },
+    {
+      "cambio": "listado",
+      "capacidad": "surtido-listado",
+      "requisito": "Promoción incompleta al finalizar la ronda",
+      "escenario": "Falla \"Eliminar productos\" en uno de los pedidos"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Salir del listado deshace el vínculo",
+      "escenario": "Salida después de sacar un pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Salir del listado deshace el vínculo",
+      "escenario": "Salida después de aceptar un cancelado"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Falla el guardado del segundo pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Falla la desvinculación al cancelar"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Reintentar tras la falla de red"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Falla el guardado por un error del servidor"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Reintentar vuelve a fallar"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Falla el cierre de la ronda"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Falla el guardado con un solo pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Otro usuario concluye la ronda a mitad del guardado"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Parciales en varios pedidos"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Bloqueos y fallas al finalizar",
+      "escenario": "Códigos sin surtir"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden de los avisos al finalizar",
+      "escenario": "Corporativo antes que los demás avisos"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden de los avisos al finalizar",
+      "escenario": "Cancelado que además era el corporativo"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden de los avisos al finalizar",
+      "escenario": "Códigos en cero después de sacar el corporativo"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden de los avisos al finalizar",
+      "escenario": "Solo una promoción incompleta"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden de los avisos al finalizar",
+      "escenario": "Solo códigos en cero"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Orden de los avisos al finalizar",
+      "escenario": "Todos los avisos en orden"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Continuación tras un aviso al finalizar",
+      "escenario": "La promoción negada sigue con el cierre"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Continuación tras un aviso al finalizar",
+      "escenario": "Los parciales son la confirmación"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Continuación tras un aviso al finalizar",
+      "escenario": "Sacar el corporativo regresa a la ventana principal"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "La ronda se queda sin pedidos",
+      "escenario": "Se cancelan todos los pedidos de la ronda"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "La ronda se queda sin pedidos",
+      "escenario": "Todo negado"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "La ronda se queda sin pedidos",
+      "escenario": "Se sacan corporativos hasta quedar uno"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Permisos de las acciones del listado",
+      "escenario": "Sacar un pedido sin rol de supervisión"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Alcance de la ronda de un solo pedido",
+      "escenario": "Sin avisos de cambio de pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Alcance de la ronda de un solo pedido",
+      "escenario": "Queda un pedido: voz, salida y cierre individuales"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Aviso de pedido completado",
+      "escenario": "Se completa el último pedido"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Pedido cancelado durante el surtido",
+      "escenario": "Un pedido cancelado al intentar finalizar"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Pedido cancelado durante el surtido",
+      "escenario": "Cancelado en la finalización automática"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Pedido cancelado durante el surtido",
+      "escenario": "La ronda se cierra sin el cancelado"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Pedido cancelado durante el surtido",
+      "escenario": "Dos cancelados en el mismo intento"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Pedido cancelado durante el surtido",
+      "escenario": "Falla la comprobación de cancelados"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "surtido-listado",
+      "requisito": "Ronda ya concluida por otro usuario",
+      "escenario": "Dos HH con la misma ronda"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "servicio/cierre-ronda-surtido",
+      "requisito": "Ronda sin pedidos",
+      "escenario": "Ronda multipedido V2 con todos los pedidos cancelados"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "servicio/cierre-ronda-surtido",
+      "requisito": "Ronda sin pedidos",
+      "escenario": "Ronda multipedido V2 con todo negado"
+    },
+    {
+      "cambio": "cierre",
+      "capacidad": "servicio/cierre-ronda-surtido",
+      "requisito": "Ronda sin pedidos",
+      "escenario": "Ronda multipedido V2 con surtido"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedidos retenidos o cancelados",
+      "escenario": "Retención durante el surtido"
+    },
+    {
+      "cambio": "armado",
+      "capacidad": "elegibilidad-ronda-multipedido",
+      "requisito": "Pedidos retenidos o cancelados",
+      "escenario": "Cancelación durante el surtido"
+    }
+  ]
+}

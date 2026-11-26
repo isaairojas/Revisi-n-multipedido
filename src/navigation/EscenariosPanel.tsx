@@ -1,8 +1,9 @@
 /**
- * Paneles de la demo para QA, a la derecha del handheld. Ocultos bajo 900 px (CSS).
+ * Paneles de la demo, a la derecha del handheld. Ocultos bajo 900 px (CSS). Desde el 2026-11-26 la demo es para el
+ * usuario final: el texto no menciona specs, reglas ni carpetas.
  *
- * - Lista de escenarios: catálogo de todos los escenarios de los specs de surtido (`catalogo.ts`), agrupados
- *   por cambio y requisito, con búsqueda.
+ * - Lista de escenarios: catálogo de `catalogo.ts` (finalizar el surtido, revisión, facturación y embarque, y al final
+ *   fallas y validaciones), agrupado por grupo y tema, con búsqueda.
  * - Explicación del escenario: al elegir uno (`?caso=`), se abre una ventana lateral propia, a la derecha de
  *   la lista, con qué valida, los pedidos con que arranca, los pasos, el resultado esperado y las lecturas
  *   para copiar al lector. Se cierra con ✕ y vuelve a abrirse al elegir otro escenario.
@@ -13,7 +14,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useStore } from '../store/AppStore';
 import { letraDe } from '../domain/ronda';
-import { CAMBIOS, CASOS, carpetaDe, casoPorId, urlCaso, type Caso, type CambioId } from './catalogo';
+import { CAMBIOS, CASOS, casoPorId, urlCaso, type Caso, type CambioId } from './catalogo';
 import styles from './EscenariosPanel.module.css';
 
 const SCROLL_KEY = 'escenarios-panel-scroll';
@@ -126,16 +127,11 @@ export function EscenariosPanel() {
         onScroll={(e) => guardar(SCROLL_KEY, e.currentTarget.scrollTop)}
       >
         <header className={styles.header}>
-          <span className={styles.badge}>Demo para QA</span>
+          <span className={styles.badge}>Demo</span>
           <h2 className={styles.title}>Revisión multipedido</h2>
           <p className={styles.subtitle}>
-            De la finalización del surtido al cierre de la tarea 35: {CASOS.filter((x) => !x.propuesta).length} escenarios de los specs
-            de surtido y {CASOS.filter((x) => x.propuesta).length} de la propuesta de revisión, facturación y embarque de la ronda. Elige
-            uno: la HH se abre con su estado y la explicación del escenario aparece a un lado. El resto del surtido está en la{' '}
-            <a href="https://isaairojas.github.io/HH-Surtido-Multiorden/" target="_blank" rel="noreferrer">
-              demo de surtido multipedido
-            </a>
-            .
+            Una ronda de 3 pedidos, de punta a punta: se termina el surtido, se revisa cada pedido y se factura y embarca.
+            Elige uno de los {CASOS.length} escenarios: la HH se abre en ese punto y a un lado ves cómo probarlo.
           </p>
           {activo && !explicando && (
             <button type="button" className={styles.verExplicacion} onClick={() => setExplicando(true)}>
@@ -148,7 +144,7 @@ export function EscenariosPanel() {
           <input
             className={styles.buscar}
             type="search"
-            placeholder="Buscar escenario, requisito o texto…"
+            placeholder="Buscar escenario o texto…"
             value={busqueda}
             onChange={(e) => setBusqueda(e.target.value)}
             aria-label="Buscar escenario"
@@ -240,14 +236,14 @@ function ExplicacionEscenario({ caso, onCerrar }: { caso: Caso; onCerrar: () => 
 
       <div className={styles.explicacionCuerpo}>
         <p className={styles.activoRuta}>
-          {cambio?.titulo} · <code>{carpetaDe(caso.cambio)}</code>
+          {cambio?.titulo}
         </p>
         <h3 className={styles.explicacionTitulo}>
           {caso.escenario}
           {caso.extra && <span className={styles.marcaExtra}>regla</span>}
         </h3>
         <p className={styles.requisitoEnExplicacion}>
-          <span className={styles.activoEtiqueta}>Requisito</span>
+          <span className={styles.activoEtiqueta}>Tema</span>
           {caso.requisito}
         </p>
         {caso.extra && (
